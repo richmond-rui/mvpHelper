@@ -1,0 +1,38 @@
+<idea-plugin>
+  <id>com.lanlengran.mvp.helpler</id>
+  <name>MVP Helper</name>
+  <version>1.0</version>
+  <vendor email="lanlengran@qq.com" url="https://www.cnblogs.com/lanlengran/">Lanlengran</vendor>
+
+  <description><![CDATA[
+      自动新建mvp文件，并自动新建dragger2的方法<br>
+      <em>most HTML tags may be used</em>
+    ]]></description>
+
+  <change-notes><![CDATA[
+      Add change notes here.<br>
+      <em>most HTML tags may be used</em>
+    ]]>
+  </change-notes>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+  <idea-version since-build="173.0"/>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+       on how to target different products -->
+  <!-- uncomment to enable plugin in all products
+  <depends>com.intellij.modules.lang</depends>
+  -->
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+  </extensions>
+
+  <actions>
+    <!-- Add your actions here -->
+    <action id="MvpAction" class="com.lanlengran.mvp_helper.MvpAction" text="MvpAction" description="新建自动创建mvp文件夹">
+      <add-to-group group-id="GenerateGroup" anchor="last"/>
+    </action>
+  </actions>
+
+</idea-plugin>
